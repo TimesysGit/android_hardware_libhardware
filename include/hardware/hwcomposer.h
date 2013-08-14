@@ -254,6 +254,9 @@ typedef struct hwc_layer_1 {
              *   pixel.a = planeAlpha;
              *
              */
+            /* for HWC_BLENDING_NONE, alpha is not used.
+             * for HWC_BLENDING_PREMULT and HWC_BLENDING_COVERAGE, it is plane alpha value.
+             * for HWC_BLENDING_DIM, it is the alpha in source color (0,0,0,alpha). */
             uint8_t planeAlpha;
 
             /* reserved for future use */
