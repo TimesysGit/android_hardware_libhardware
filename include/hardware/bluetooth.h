@@ -46,6 +46,8 @@ __BEGIN_DECLS
 #define BT_PROFILE_GATT_ID "gatt"
 #define BT_PROFILE_AV_RC_ID "avrcp"
 
+#define BT_PROFILE_IAP2_ID "iap2"
+
 /** Bluetooth Address */
 typedef struct {
     uint8_t address[6];
